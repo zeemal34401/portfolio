@@ -1,0 +1,29 @@
+{
+  "product": "Cortex",
+  "problem": "Product teams drown in unstructured research; generic chat UIs don't support verification or action.",
+  "personas": [
+    { "name": "Alex Kim", "role": "Senior Product Manager", "goal": "Synthesize competitor intel with cited sources before roadmap review" },
+    { "name": "Sam Rivera", "role": "UX Research Lead", "goal": "Turn ticket themes into evidence-backed insights" }
+  ],
+  "metrics": {
+    "researchTime": "4 hrs → 45 min per brief",
+    "citationTrust": "89% users verify sources before sharing",
+    "exportAdoption": "67% of sessions end in doc export"
+  },
+  "frames": {
+    "cover": ["Cover", "Problem & Trust UX Principles"],
+    "process": ["Agent Workflow Diagram", "Trust UX Annotations", "Exploration Directions"],
+    "flows": ["Ask → Cite → Compare → Export", "Human Approval Step"],
+    "ui": [
+      "Workspace Home",
+      "Chat Thread — Cited Answer",
+      "Source Panel — Citations",
+      "Compare Sources View",
+      "Summary Doc Editor",
+      "Export Modal — Notion/Jira",
+      "Settings — Model & Data Scope"
+    ],
+    "states": ["Low Confidence Response", "Blocked / Unsafe Response", "Empty Workspace", "Loading Sources", "Regenerate in Progress"]
+  },
+  "totalFrames": 48
+}

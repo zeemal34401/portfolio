@@ -1,0 +1,32 @@
+{
+  "product": "Vaultline",
+  "problem": "Users abandon finance apps due to anxiety, unclear fees, and fragile onboarding.",
+  "personas": [
+    { "name": "Morgan Ellis", "role": "Freelance Designer", "goal": "See cash flow and stay within budget without spreadsheet anxiety" },
+    { "name": "David Okonkwo", "role": "Small Business Owner", "goal": "Transfer funds securely with zero surprise fees" }
+  ],
+  "metrics": {
+    "onboardingCompletion": "41% → 78%",
+    "transferAbandonment": "Reduced 33%",
+    "supportTickets": "Fee-related tickets down 52%"
+  },
+  "frames": {
+    "cover": ["Cover", "Trust & Compliance Principles"],
+    "process": ["Journey Map", "Security Pattern Library", "Exploration Directions"],
+    "flows": ["KYC Onboarding", "Transfer with Step-up Auth", "Budget Setup"],
+    "ui": [
+      "Welcome",
+      "Identity Verification — Step 1/2/3",
+      "Link Account",
+      "Dashboard — Cash Flow",
+      "Budget Categories",
+      "Transfer — Amount",
+      "Transfer — Review",
+      "Transfer — Biometric Confirm",
+      "Transfer — Success Receipt",
+      "Support & Help"
+    ],
+    "states": ["Fraud Warning", "Verification Failed", "Insufficient Funds", "Session Timeout"]
+  },
+  "totalFrames": 54
+}

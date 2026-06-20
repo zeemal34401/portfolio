@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="white"/>
+  <rect x="40" y="40" width="160" height="420" rx="8" fill="#F8FAFC"/>
+  <rect x="220" y="40" width="540" height="200" rx="8" fill="#CFFAFE" stroke="#0891B2" stroke-width="1"/>
+  <rect x="220" y="260" width="320" height="200" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="560" y="260" width="200" height="200" rx="8" fill="#F0F9FF" stroke="#0891B2" stroke-width="1"/>
+  <text x="40" y="490" fill="#64748B" font-family="system-ui" font-size="14">Cortex  AI Copilot</text>
+</svg>

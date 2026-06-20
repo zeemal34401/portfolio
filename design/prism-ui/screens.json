@@ -1,0 +1,45 @@
+{
+  "product": "Prism UI",
+  "frames": {
+    "cover": ["Cover — Prism UI Design System", "Summary — Scope & Status"],
+    "foundations": [
+      "Color — Light Mode Scale",
+      "Color — Dark Mode Scale",
+      "Typography Scale",
+      "Spacing & Radius",
+      "Elevation & Shadows",
+      "Grid & Breakpoints"
+    ],
+    "components": [
+      "Button — Variant Matrix",
+      "Icon Button — Sizes",
+      "Input — States",
+      "Select — States",
+      "Checkbox / Radio / Switch",
+      "Badge & Tag",
+      "Avatar — Sizes",
+      "Tooltip Anatomy",
+      "Modal — Sizes",
+      "Toast — Types",
+      "Tabs — Variants",
+      "Table Row Pattern",
+      "Pagination",
+      "Breadcrumb",
+      "Sidebar Nav Item"
+    ],
+    "patterns": [
+      "Form Layout — 1 & 2 Column",
+      "Page Header",
+      "Empty State",
+      "Data Table Toolbar"
+    ],
+    "documentation": [
+      "Do / Don't — Buttons",
+      "Do / Don't — Forms",
+      "Component Status Board",
+      "Token Naming Convention",
+      "Dev Handoff — How to Consume"
+    ]
+  },
+  "totalFrames": 42
+}

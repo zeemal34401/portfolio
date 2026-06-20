@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0B1220"/>
+  <rect x="40" y="40" width="120" height="420" rx="12" fill="#0F172A"/>
+  <rect x="180" y="40" width="580" height="80" rx="12" fill="#0F172A"/>
+  <rect x="180" y="140" width="135" height="100" rx="12" fill="#0D9488" opacity="0.3"/>
+  <rect x="330" y="140" width="135" height="100" rx="12" fill="#0D9488" opacity="0.3"/>
+  <rect x="480" y="140" width="135" height="100" rx="12" fill="#0D9488" opacity="0.3"/>
+  <rect x="630" y="140" width="130" height="100" rx="12" fill="#0D9488" opacity="0.3"/>
+  <rect x="180" y="260" width="380" height="200" rx="12" fill="#0F172A"/>
+  <rect x="580" y="260" width="180" height="200" rx="12" fill="#0F172A"/>
+  <text x="40" y="490" fill="#64748B" font-family="system-ui" font-size="14">MetricHive  SaaS Dashboard</text>
+</svg>

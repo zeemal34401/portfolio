@@ -1,0 +1,56 @@
+{
+  "namingConvention": "[01-05] ProductName — Case Study",
+  "pages": [
+    "Cover & Summary",
+    "Process — Research, IA, Exploration",
+    "User Flows & Journey",
+    "Final UI Screens",
+    "Edge States",
+    "Prototype Links",
+    "Dev Handoff Specs"
+  ],
+  "files": [
+    {
+      "id": "01",
+      "name": "03 Prism UI — Case Study",
+      "product": "Prism UI",
+      "slug": "prism-ui",
+      "buildOrder": 1
+    },
+    {
+      "id": "02",
+      "name": "01 MetricHive — Case Study",
+      "product": "MetricHive",
+      "slug": "metrichive",
+      "buildOrder": 2
+    },
+    {
+      "id": "03",
+      "name": "02 Relay — Case Study",
+      "product": "Relay",
+      "slug": "relay",
+      "buildOrder": 3
+    },
+    {
+      "id": "04",
+      "name": "04 Cortex — Case Study",
+      "product": "Cortex",
+      "slug": "cortex",
+      "buildOrder": 4
+    },
+    {
+      "id": "05",
+      "name": "05 Vaultline — Case Study",
+      "product": "Vaultline",
+      "slug": "vaultline",
+      "buildOrder": 5
+    }
+  ],
+  "craftRequirements": [
+    "Auto layout on all components and most frames",
+    "Components + variants for repeated UI",
+    "Styles/variables for color and type",
+    "Prototype connections on primary flows",
+    "Case-study annotation layers with recruiter-friendly copy"
+  ]
+}

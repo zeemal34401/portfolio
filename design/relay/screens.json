@@ -1,0 +1,30 @@
+{
+  "product": "Relay",
+  "problem": "Field sales reps lose deals because CRM work happens after visits, not during them.",
+  "personas": [
+    { "name": "Jordan Blake", "role": "Enterprise Account Executive", "goal": "Capture visit context before leaving the parking lot" },
+    { "name": "Priya Nair", "role": "Sales Manager", "goal": "See rep activity and follow-up quality in real time" }
+  ],
+  "metrics": {
+    "noteCaptureRate": "34% → 81%",
+    "followUpSLA": "Same-day follow-ups up 2.4×",
+    "offlineReliability": "99.2% sync success after reconnect"
+  },
+  "frames": {
+    "cover": ["Cover", "Problem & Outcomes"],
+    "process": ["Journey Map", "User Flow Diagram", "iOS vs Android Notes", "Exploration Directions"],
+    "flows": ["Morning Plan → Visit → Note → Task", "End-of-Day Recap"],
+    "ui": [
+      "Splash & Onboarding — Step 1/2/3",
+      "Home — Today's Visits",
+      "Visit Detail — Check-in",
+      "Note Capture — Voice + Actions",
+      "Task List",
+      "Profile & Settings",
+      "Notifications"
+    ],
+    "states": ["Offline Banner", "Sync Pending", "Empty — No Visits", "Error — Upload Failed"]
+  },
+  "platform": { "primary": "iOS", "frameWidth": 390, "frameHeight": 844 },
+  "totalFrames": 52
+}

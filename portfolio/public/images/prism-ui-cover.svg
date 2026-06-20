@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="white"/>
+  <rect x="40" y="40" width="720" height="60" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="40" y="120" width="340" height="40" rx="8" fill="#2563EB"/>
+  <rect x="40" y="180" width="200" height="40" rx="8" fill="#F1F5F9" stroke="#E2E8F0"/>
+  <rect x="40" y="240" width="340" height="120" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <rect x="400" y="120" width="360" height="240" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="40" y="490" fill="#64748B" font-family="system-ui" font-size="14">Prism UI  Design System</text>
+</svg>

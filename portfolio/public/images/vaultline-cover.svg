@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#F8FAFC"/>
+  <rect x="280" y="30" width="240" height="440" rx="32" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <rect x="280" y="30" width="240" height="120" rx="32" fill="#059669"/>
+  <rect x="300" y="170" width="200" height="40" rx="12" fill="#059669"/>
+  <rect x="300" y="230" width="200" height="8" rx="4" fill="#D1FAE5"/>
+  <rect x="300" y="260" width="160" height="8" rx="4" fill="#D1FAE5"/>
+  <rect x="300" y="290" width="180" height="8" rx="4" fill="#D1FAE5"/>
+  <text x="40" y="490" fill="#64748B" font-family="system-ui" font-size="14">Vaultline  Fintech</text>
+</svg>

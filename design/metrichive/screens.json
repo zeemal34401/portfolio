@@ -1,0 +1,27 @@
+{
+  "product": "MetricHive",
+  "problem": "Legacy revenue ops dashboard overloads users with metrics; teams cannot act quickly on churn and expansion signals.",
+  "personas": [
+    { "name": "Sarah Chen", "role": "VP Revenue Operations", "goal": "Spot portfolio risk in under 5 minutes each morning" },
+    { "name": "Marcus Webb", "role": "Customer Success Manager", "goal": "Prioritize at-risk accounts before QBR" },
+    { "name": "Elena Torres", "role": "Executive Sponsor", "goal": "Understand ARR health without operational noise" }
+  ],
+  "metrics": {
+    "timeToInsight": "8 min → 2 min",
+    "alertTriage": "47% faster resolution",
+    "taskCompletion": "92% for saved-view workflows"
+  },
+  "frames": {
+    "cover": ["Cover", "Problem & Outcomes"],
+    "process": ["Legacy Audit — Before", "Personas", "IA Map", "Direction A / B / C", "Chosen Direction Rationale"],
+    "flows": ["Executive Overview Flow", "Alert Triage Flow", "Account Drill-down Flow"],
+    "ui": {
+      "shared": ["Login", "Global Navigation"],
+      "exec": ["Executive Dashboard — KPI Overview"],
+      "revops": ["RevOps Home — Pipeline Health", "Accounts Table — Filters & Saved Views", "Account Detail — Timeline & Health Score"],
+      "admin": ["Alerts Inbox", "Settings — Roles & Permissions"]
+    },
+    "states": ["Empty — No Accounts", "Loading — Partial Data", "Error — Sync Failed", "Restricted — View-only Role"]
+  },
+  "totalFrames": 58
+}

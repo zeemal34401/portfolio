@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#F8FAFC"/>
+  <rect x="280" y="30" width="240" height="440" rx="32" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <rect x="300" y="80" width="200" height="24" rx="8" fill="#EDE9FE"/>
+  <rect x="300" y="120" width="160" height="16" rx="4" fill="#E2E8F0"/>
+  <rect x="300" y="160" width="200" height="80" rx="16" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+  <rect x="300" y="260" width="200" height="60" rx="12" fill="#F1F5F9"/>
+  <rect x="300" y="340" width="200" height="60" rx="12" fill="#F1F5F9"/>
+  <text x="40" y="490" fill="#64748B" font-family="system-ui" font-size="14">Relay  Mobile App</text>
+</svg>
