@@ -1,133 +1,173 @@
 import Link from "next/link";
+import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
+import { ProjectGallery, ProjectVideos } from "@/components/case-study/ProjectGallery";
+import { SectionLabel } from "@/components/ui/SiteUi";
 import type { Project } from "@/lib/projects";
 
-export function CaseStudyLayout({
-  project,
-  children,
-}: {
-  project: Project;
-  children: React.ReactNode;
-}) {
+export function CaseStudyLayout({ project }: { project: Project }) {
   return (
     <article>
-      <section className="border-b border-border bg-card">
-        <div className="mx-auto max-w-6xl px-6 py-16">
-          <Link href="/work" className="text-sm text-muted hover:text-foreground">
+      <section className="relative overflow-hidden border-b border-border">
+        <div
+          className="pointer-events-none absolute inset-0 opacity-40"
+          style={{
+            background: `radial-gradient(ellipse 70% 60% at 80% 0%, ${project.accent}33, transparent)`,
+          }}
+        />
+        <div className="relative mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
+          <Link
+            href="/work"
+            className="link-underline font-mono-label text-[11px] uppercase tracking-[0.16em] text-muted"
+          >
             ← All work
           </Link>
-          <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:items-end">
-            <div>
-              <p className="text-sm font-medium uppercase tracking-wider" style={{ color: project.accent }}>
-                {project.category}
-              </p>
-              <h1 className="mt-2 text-4xl font-semibold tracking-tight sm:text-5xl">{project.name}</h1>
-              <p className="prose-narrow mt-4 text-lg text-muted">{project.tagline}</p>
+          <div className="mt-10 grid gap-12 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-7">
+              <SectionLabel>{project.category}</SectionLabel>
+              <h1 className="font-display mt-4 text-5xl tracking-tight sm:text-6xl lg:text-7xl">
+                <span className="text-gradient">{project.name}</span>
+              </h1>
+              <p className="prose-narrow mt-6 text-lg text-muted sm:text-xl">{project.tagline}</p>
             </div>
-            <div className="grid grid-cols-2 gap-4 text-sm">
-              <div>
-                <p className="text-muted">Role</p>
-                <p className="font-medium">{project.role}</p>
-              </div>
-              <div>
-                <p className="text-muted">Timeline</p>
-                <p className="font-medium">{project.timeline}</p>
-              </div>
-              <div>
-                <p className="text-muted">Figma file</p>
-                <p className="font-medium">{project.figmaFile}</p>
-              </div>
-              <div>
-                <p className="text-muted">Proves</p>
-                <p className="font-medium">{project.proves}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-6 py-12">
-        <div className="grid gap-4 sm:grid-cols-3">
-          {project.metrics.map((m) => (
-            <div key={m.label} className="rounded-2xl border border-border bg-card p-6">
-              <p className="text-2xl font-semibold tracking-tight" style={{ color: project.accent }}>
-                {m.value}
-              </p>
-              <p className="mt-1 text-sm font-medium">{m.label}</p>
-              {m.detail && <p className="mt-1 text-xs text-muted">{m.detail}</p>}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="border-y border-border bg-background">
-        <div className="mx-auto max-w-6xl px-6 py-12">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-muted">Problem</h2>
-          <p className="prose-narrow mt-4 text-xl leading-relaxed">{project.problem}</p>
-          <p className="prose-narrow mt-4 text-muted">{project.summary}</p>
-        </div>
-      </section>
-
-      {children}
-
-      <section className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="text-sm font-semibold uppercase tracking-wider text-muted">Personas</h2>
-        <div className="mt-6 grid gap-4 md:grid-cols-3">
-          {project.personas.map((p) => (
-            <div key={p.name} className="rounded-2xl border border-border bg-card p-6">
-              <p className="font-semibold">{p.name}</p>
-              <p className="text-sm text-muted">{p.role}</p>
-              <p className="mt-3 text-sm leading-relaxed">{p.goal}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="border-t border-border bg-card">
-        <div className="mx-auto max-w-6xl px-6 py-16">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-muted">Process</h2>
-          <div className="mt-8 space-y-10">
-            {project.process.map((section, i) => (
-              <div key={section.title} className="grid gap-4 lg:grid-cols-12">
-                <p className="text-sm font-medium text-muted lg:col-span-2">0{i + 1}</p>
-                <div className="lg:col-span-10">
-                  <h3 className="text-xl font-semibold">{section.title}</h3>
-                  <p className="prose-narrow mt-2 text-muted">{section.body}</p>
-                  {section.bullets && (
-                    <ul className="mt-3 space-y-1 text-sm text-muted">
-                      {section.bullets.map((b) => (
-                        <li key={b}>· {b}</li>
-                      ))}
-                    </ul>
-                  )}
+            <div className="glass-card-static grid grid-cols-2 gap-4 rounded-3xl p-6 lg:col-span-5">
+              {[
+                { label: "Role", value: project.role },
+                { label: "Timeline", value: project.timeline },
+                { label: "Deliverables", value: project.deliverables.join(" · ") },
+                { label: "Expertise", value: project.proves },
+              ].map((item) => (
+                <div key={item.label} className={item.label === "Deliverables" ? "col-span-2" : ""}>
+                  <p className="font-mono-label text-[10px] uppercase tracking-[0.16em] text-accent-bright">
+                    {item.label}
+                  </p>
+                  <p className="mt-2 text-sm leading-snug">{item.value}</p>
                 </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-14 lg:px-10">
+        <Stagger className="grid gap-4 sm:grid-cols-3">
+          {project.metrics.map((m) => (
+            <StaggerItem key={m.label}>
+              <div className="glass-card card-shine rounded-3xl p-6">
+                <p className="font-display text-3xl tracking-tight text-gradient-accent">{m.value}</p>
+                <p className="mt-2 font-medium">{m.label}</p>
+                {m.detail && <p className="mt-1 text-sm text-muted">{m.detail}</p>}
               </div>
+            </StaggerItem>
+          ))}
+        </Stagger>
+      </section>
+
+      <section className="border-y border-border bg-surface backdrop-blur-xl">
+        <div className="mx-auto max-w-7xl px-6 py-14 lg:px-10">
+          <Reveal>
+            <SectionLabel>Challenge</SectionLabel>
+            <p className="prose-narrow mt-4 font-display text-2xl leading-snug sm:text-3xl">{project.problem}</p>
+            <p className="prose-narrow mt-6 text-muted">{project.summary}</p>
+          </Reveal>
+          <Reveal className="mt-10">
+            <SectionLabel>Key highlights</SectionLabel>
+            <ul className="mt-4 grid gap-3 sm:grid-cols-3">
+              {project.highlights.map((h) => (
+                <li
+                  key={h}
+                  className="glass-card-static flex items-start gap-3 rounded-2xl px-4 py-3 text-sm text-muted"
+                >
+                  <span className="text-accent">◆</span>
+                  {h}
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+        </div>
+      </section>
+
+      {project.videos && project.videos.length > 0 && <ProjectVideos videos={project.videos} />}
+
+      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
+        <Reveal>
+          <SectionLabel>Design gallery</SectionLabel>
+          <p className="mt-3 max-w-2xl text-sm text-muted">
+            Screens and assets from this project — click any frame to view full size.
+          </p>
+        </Reveal>
+        <div className="mt-10">
+          <ProjectGallery images={project.gallery} />
+        </div>
+      </section>
+
+      <section className="border-t border-border bg-surface backdrop-blur-xl">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
+          <Reveal>
+            <SectionLabel>Process</SectionLabel>
+          </Reveal>
+          <div className="mt-10 space-y-12">
+            {project.process.map((section, i) => (
+              <Reveal key={section.title} delay={i * 0.05}>
+                <div className="grid gap-4 border-t border-border pt-10 lg:grid-cols-12">
+                  <p className="font-mono-label text-[11px] uppercase tracking-[0.18em] text-accent-bright lg:col-span-2">
+                    Step 0{i + 1}
+                  </p>
+                  <div className="lg:col-span-10">
+                    <h3 className="font-display text-2xl tracking-tight">{section.title}</h3>
+                    <p className="prose-narrow mt-3 text-muted">{section.body}</p>
+                    {section.bullets && (
+                      <ul className="mt-4 space-y-2 text-sm text-muted">
+                        {section.bullets.map((b) => (
+                          <li key={b} className="flex gap-3">
+                            <span className="text-accent">—</span>
+                            {b}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-16">
-        <h2 className="text-sm font-semibold uppercase tracking-wider text-muted">Outcomes</h2>
-        <div className="mt-6 grid gap-4 md:grid-cols-2">
+      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
+        <Reveal>
+          <SectionLabel>Outcomes</SectionLabel>
+        </Reveal>
+        <Stagger className="mt-8 grid gap-4 md:grid-cols-2">
           {project.outcomes.map((o) => (
-            <div key={o.title} className="rounded-2xl border border-border p-6">
-              <h3 className="font-semibold">{o.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{o.body}</p>
-            </div>
+            <StaggerItem key={o.title}>
+              <div className="glass-card card-shine rounded-3xl p-8">
+                <h3 className="font-display text-xl">{o.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted">{o.body}</p>
+              </div>
+            </StaggerItem>
           ))}
-        </div>
+        </Stagger>
       </section>
 
-      <section className="border-t border-border bg-background">
-        <div className="mx-auto max-w-6xl px-6 py-16">
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-muted">What I&apos;d do next</h2>
-          <ul className="mt-4 space-y-2 text-muted">
-            {project.nextSteps.map((step) => (
-              <li key={step} className="text-sm">
-                → {step}
-              </li>
-            ))}
-          </ul>
+      <section className="border-t border-border bg-surface backdrop-blur-xl">
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
+          <Reveal>
+            <div className="glass-card-static rounded-3xl p-8 sm:flex sm:items-center sm:justify-between sm:p-10">
+              <div>
+                <SectionLabel>Hire me for similar work</SectionLabel>
+                <p className="font-display mt-3 text-2xl tracking-tight sm:text-3xl">
+                  Need a designer for {project.category.toLowerCase()}?
+                </p>
+                <p className="mt-2 text-sm text-muted">Available remotely · zeemalejaz582@gmail.com</p>
+              </div>
+              <Link
+                href="/contact"
+                className="btn-primary mt-6 inline-flex rounded-full px-6 py-3.5 text-sm font-medium text-white sm:mt-0"
+              >
+                Start a project →
+              </Link>
+            </div>
+          </Reveal>
         </div>
       </section>
     </article>

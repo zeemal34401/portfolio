@@ -1,0 +1,1084 @@
+{
+  "bouyantlandingpage": [
+    {
+      "file": "landingpage2.png",
+      "title": "landingpage2"
+    }
+  ],
+  "cravelyvendorapp": [
+    {
+      "file": "Configuration.png",
+      "title": "Configuration"
+    },
+    {
+      "file": "Coupons-1.png",
+      "title": "Coupons-1"
+    },
+    {
+      "file": "Coupons-2.png",
+      "title": "Coupons-2"
+    },
+    {
+      "file": "Coupons.png",
+      "title": "Coupons"
+    },
+    {
+      "file": "Dashboard.png",
+      "title": "Dashboard"
+    },
+    {
+      "file": "Dispatch.png",
+      "title": "Dispatch"
+    },
+    {
+      "file": "Location.png",
+      "title": "Location"
+    },
+    {
+      "file": "Login.png",
+      "title": "Login"
+    },
+    {
+      "file": "No Restaurant.png",
+      "title": "No Restaurant"
+    },
+    {
+      "file": "Notification.png",
+      "title": "Notification"
+    },
+    {
+      "file": "Payment-1.png",
+      "title": "Payment-1"
+    },
+    {
+      "file": "Payment-2.png",
+      "title": "Payment-2"
+    },
+    {
+      "file": "Payment-3.png",
+      "title": "Payment-3"
+    },
+    {
+      "file": "Payment-4.png",
+      "title": "Payment-4"
+    },
+    {
+      "file": "Payment-5.png",
+      "title": "Payment-5"
+    },
+    {
+      "file": "Payment-6.png",
+      "title": "Payment-6"
+    },
+    {
+      "file": "Payment-7.png",
+      "title": "Payment-7"
+    },
+    {
+      "file": "Payment.png",
+      "title": "Payment"
+    },
+    {
+      "file": "Restaurant - Sections.png",
+      "title": "Restaurant - Sections"
+    },
+    {
+      "file": "Restaurant.png",
+      "title": "Restaurant"
+    },
+    {
+      "file": "Rider - Zones.png",
+      "title": "Rider - Zones"
+    },
+    {
+      "file": "Rider Status.png",
+      "title": "Rider Status"
+    },
+    {
+      "file": "Rider.png",
+      "title": "Rider"
+    },
+    {
+      "file": "Store-1.png",
+      "title": "Store-1"
+    },
+    {
+      "file": "Store-2.png",
+      "title": "Store-2"
+    },
+    {
+      "file": "Store.png",
+      "title": "Store"
+    },
+    {
+      "file": "Vendor.png",
+      "title": "Vendor"
+    },
+    {
+      "file": "Withdraw Request.png",
+      "title": "Withdraw Request"
+    },
+    {
+      "file": "Zone - Add Zones.png",
+      "title": "Zone - Add Zones"
+    },
+    {
+      "file": "Zone - Radius.png",
+      "title": "Zone - Radius"
+    },
+    {
+      "file": "Zone.png",
+      "title": "Zone"
+    }
+  ],
+  "cravelyweb": [
+    {
+      "file": "webfull/Frame 2608888.png",
+      "title": "Frame 2608888"
+    },
+    {
+      "file": "webfull/web-1.jpg",
+      "title": "web-1"
+    },
+    {
+      "file": "webfull/web-1.png",
+      "title": "web-1"
+    },
+    {
+      "file": "webfull/web-2.jpg",
+      "title": "web-2"
+    },
+    {
+      "file": "webfull/web-2.png",
+      "title": "web-2"
+    },
+    {
+      "file": "webfull/web-3.jpg",
+      "title": "web-3"
+    },
+    {
+      "file": "webfull/web-3.png",
+      "title": "web-3"
+    },
+    {
+      "file": "webfull/web-4.jpg",
+      "title": "web-4"
+    },
+    {
+      "file": "webfull/web-4.png",
+      "title": "web-4"
+    },
+    {
+      "file": "webfull/web-5.jpg",
+      "title": "web-5"
+    },
+    {
+      "file": "webfull/web-6.jpg",
+      "title": "web-6"
+    },
+    {
+      "file": "webfull/web.jpg",
+      "title": "web"
+    },
+    {
+      "file": "webfull/web.png",
+      "title": "web"
+    }
+  ],
+  "crossfade": [
+    {
+      "file": "Check your Email.png",
+      "title": "Check your Email"
+    },
+    {
+      "file": "Check your Phone.png",
+      "title": "Check your Phone"
+    },
+    {
+      "file": "Forgot Password.png",
+      "title": "Forgot Password"
+    },
+    {
+      "file": "Home #2.png",
+      "title": "Home #2"
+    },
+    {
+      "file": "Home Live Radio.png",
+      "title": "Home Live Radio"
+    },
+    {
+      "file": "Home Music.png",
+      "title": "Home Music"
+    },
+    {
+      "file": "Home Podcasts.png",
+      "title": "Home Podcasts"
+    },
+    {
+      "file": "Home Videos.png",
+      "title": "Home Videos"
+    },
+    {
+      "file": "Login Page.png",
+      "title": "Login Page"
+    },
+    {
+      "file": "Logo.png",
+      "title": "Logo"
+    },
+    {
+      "file": "Music Lyrics-1.png",
+      "title": "Music Lyrics-1"
+    },
+    {
+      "file": "Music Lyrics.png",
+      "title": "Music Lyrics"
+    },
+    {
+      "file": "Music Playback.png",
+      "title": "Music Playback"
+    },
+    {
+      "file": "Search Active.png",
+      "title": "Search Active"
+    },
+    {
+      "file": "Search.png",
+      "title": "Search"
+    },
+    {
+      "file": "Sign Up Page.png",
+      "title": "Sign Up Page"
+    },
+    {
+      "file": "Splash Screen.png",
+      "title": "Splash Screen"
+    }
+  ],
+  "digitalagencylandingpage": [
+    {
+      "file": "landing page and design.png",
+      "title": "landing page and design"
+    }
+  ],
+  "ecommercestore": [
+    {
+      "file": "Cart & Checkout.png",
+      "title": "Cart & Checkout"
+    },
+    {
+      "file": "Homepage.png",
+      "title": "Homepage"
+    },
+    {
+      "file": "Login & Onboarding.png",
+      "title": "Login & Onboarding"
+    },
+    {
+      "file": "Order Cancellation.png",
+      "title": "Order Cancellation"
+    },
+    {
+      "file": "Order Confirmation.png",
+      "title": "Order Confirmation"
+    },
+    {
+      "file": "Order Tracking.png",
+      "title": "Order Tracking"
+    },
+    {
+      "file": "Product Details.png",
+      "title": "Product Details"
+    },
+    {
+      "file": "Search & Filters.png",
+      "title": "Search & Filters"
+    },
+    {
+      "file": "Wishlist.png",
+      "title": "Wishlist"
+    }
+  ],
+  "flextrack": [
+    {
+      "file": "Screen1.png",
+      "title": "Screen1"
+    },
+    {
+      "file": "Screen2.png",
+      "title": "Screen2"
+    },
+    {
+      "file": "screen3.png",
+      "title": "screen3"
+    },
+    {
+      "file": "screen4.png",
+      "title": "screen4"
+    }
+  ],
+  "foodapplogos": [
+    {
+      "file": "Android Large - 4.png",
+      "title": "Android Large - 4"
+    },
+    {
+      "file": "Android Large - 5.png",
+      "title": "Android Large - 5"
+    },
+    {
+      "file": "Android Large - 6.png",
+      "title": "Android Large - 6"
+    },
+    {
+      "file": "Frame 11.png",
+      "title": "Frame 11"
+    },
+    {
+      "file": "Frame 12.png",
+      "title": "Frame 12"
+    }
+  ],
+  "fooddeliverycravely": [
+    {
+      "file": "Checkout.png",
+      "title": "Checkout"
+    },
+    {
+      "file": "Confirm address and payment method.png",
+      "title": "Confirm address and payment method"
+    },
+    {
+      "file": "Home.png",
+      "title": "Home"
+    },
+    {
+      "file": "item detail.png",
+      "title": "item detail"
+    },
+    {
+      "file": "Restaurant.png",
+      "title": "Restaurant"
+    },
+    {
+      "file": "Search.png",
+      "title": "Search"
+    },
+    {
+      "file": "Store-1.png",
+      "title": "Store-1"
+    },
+    {
+      "file": "Store.png",
+      "title": "Store"
+    }
+  ],
+  "grocerystore": [
+    {
+      "file": "03.png",
+      "title": "03"
+    },
+    {
+      "file": "04.png",
+      "title": "04"
+    },
+    {
+      "file": "05.png",
+      "title": "05"
+    },
+    {
+      "file": "06.png",
+      "title": "06"
+    },
+    {
+      "file": "1.png",
+      "title": "1"
+    },
+    {
+      "file": "11.png",
+      "title": "11"
+    },
+    {
+      "file": "2.png",
+      "title": "2"
+    },
+    {
+      "file": "22.png",
+      "title": "22"
+    },
+    {
+      "file": "3.png",
+      "title": "3"
+    },
+    {
+      "file": "33.png",
+      "title": "33"
+    },
+    {
+      "file": "4.png",
+      "title": "4"
+    },
+    {
+      "file": "44.png",
+      "title": "44"
+    },
+    {
+      "file": "5.png",
+      "title": "5"
+    },
+    {
+      "file": "55.png",
+      "title": "55"
+    },
+    {
+      "file": "66.png",
+      "title": "66"
+    },
+    {
+      "file": "d2.png",
+      "title": "d2"
+    },
+    {
+      "file": "d3.png",
+      "title": "d3"
+    },
+    {
+      "file": "Deals.png",
+      "title": "Deals"
+    },
+    {
+      "file": "Delivery.png",
+      "title": "Delivery"
+    },
+    {
+      "file": "fg1.png",
+      "title": "fg1"
+    },
+    {
+      "file": "fg2.png",
+      "title": "fg2"
+    },
+    {
+      "file": "fg3.png",
+      "title": "fg3"
+    },
+    {
+      "file": "Forgotpass.png",
+      "title": "Forgotpass"
+    },
+    {
+      "file": "Fresh grocery.png",
+      "title": "Fresh grocery"
+    },
+    {
+      "file": "Home.png",
+      "title": "Home"
+    },
+    {
+      "file": "Homelo.png",
+      "title": "Homelo"
+    },
+    {
+      "file": "HomeScreen.png",
+      "title": "HomeScreen"
+    },
+    {
+      "file": "logout.png",
+      "title": "logout"
+    },
+    {
+      "file": "Minimum spend limit use cases.png",
+      "title": "Minimum spend limit use cases"
+    },
+    {
+      "file": "My cart empty.png",
+      "title": "My cart empty"
+    },
+    {
+      "file": "o2.png",
+      "title": "o2"
+    },
+    {
+      "file": "orderhistory.png",
+      "title": "orderhistory"
+    },
+    {
+      "file": "p1.png",
+      "title": "p1"
+    },
+    {
+      "file": "p2.png",
+      "title": "p2"
+    },
+    {
+      "file": "payment.png",
+      "title": "payment"
+    },
+    {
+      "file": "Product detail screen.png",
+      "title": "Product detail screen"
+    },
+    {
+      "file": "Products.png",
+      "title": "Products"
+    },
+    {
+      "file": "Profile.png",
+      "title": "Profile"
+    },
+    {
+      "file": "Quick meals.png",
+      "title": "Quick meals"
+    },
+    {
+      "file": "rate.png",
+      "title": "rate"
+    },
+    {
+      "file": "rate1.png",
+      "title": "rate1"
+    },
+    {
+      "file": "Screenc2.png",
+      "title": "Screenc2"
+    },
+    {
+      "file": "Screenc3.png",
+      "title": "Screenc3"
+    },
+    {
+      "file": "Screencart.png",
+      "title": "Screencart"
+    },
+    {
+      "file": "Search results.png",
+      "title": "Search results"
+    },
+    {
+      "file": "signup.png",
+      "title": "signup"
+    },
+    {
+      "file": "Snacks.png",
+      "title": "Snacks"
+    },
+    {
+      "file": "Special offers.png",
+      "title": "Special offers"
+    },
+    {
+      "file": "Untitled-1.png",
+      "title": "Untitled-1"
+    },
+    {
+      "file": "Untitled-2.png",
+      "title": "Untitled-2"
+    },
+    {
+      "file": "Untitled-3.png",
+      "title": "Untitled-3"
+    },
+    {
+      "file": "Untitled-4.png",
+      "title": "Untitled-4"
+    },
+    {
+      "file": "Untitled-5.png",
+      "title": "Untitled-5"
+    },
+    {
+      "file": "Untitled-6.png",
+      "title": "Untitled-6"
+    },
+    {
+      "file": "Untitled-7.png",
+      "title": "Untitled-7"
+    },
+    {
+      "file": "Untitled-8.png",
+      "title": "Untitled-8"
+    },
+    {
+      "file": "Untitled-9.png",
+      "title": "Untitled-9"
+    },
+    {
+      "file": "Untitled.png",
+      "title": "Untitled"
+    },
+    {
+      "file": "Your Favorites.png",
+      "title": "Your Favorites"
+    }
+  ],
+  "infographics": [
+    {
+      "file": "1.png",
+      "title": "1"
+    },
+    {
+      "file": "11111.png",
+      "title": "11111"
+    },
+    {
+      "file": "2.png",
+      "title": "2"
+    },
+    {
+      "file": "aaaa.png",
+      "title": "aaaa"
+    },
+    {
+      "file": "Frame 1321314811.png",
+      "title": "Frame 1321314811"
+    },
+    {
+      "file": "Frame 1321314915.png",
+      "title": "Frame 1321314915"
+    },
+    {
+      "file": "Frame 1321314916.png",
+      "title": "Frame 1321314916"
+    },
+    {
+      "file": "Frame 1321314946.png",
+      "title": "Frame 1321314946"
+    },
+    {
+      "file": "Frame 1321314974.png",
+      "title": "Frame 1321314974"
+    },
+    {
+      "file": "Frame 1321314975.png",
+      "title": "Frame 1321314975"
+    },
+    {
+      "file": "Frame 1321314976.png",
+      "title": "Frame 1321314976"
+    },
+    {
+      "file": "Frame 1321315020.png",
+      "title": "Frame 1321315020"
+    },
+    {
+      "file": "Frame 1321315038.png",
+      "title": "Frame 1321315038"
+    },
+    {
+      "file": "Frame 1321315040.png",
+      "title": "Frame 1321315040"
+    },
+    {
+      "file": "Frame 1321315063.png",
+      "title": "Frame 1321315063"
+    },
+    {
+      "file": "Frame 1321315065.png",
+      "title": "Frame 1321315065"
+    },
+    {
+      "file": "Frame 1321315090.png",
+      "title": "Frame 1321315090"
+    },
+    {
+      "file": "Frame 1321315093.png",
+      "title": "Frame 1321315093"
+    },
+    {
+      "file": "Frame 1321315098.png",
+      "title": "Frame 1321315098"
+    },
+    {
+      "file": "Frame 1321315106.png",
+      "title": "Frame 1321315106"
+    },
+    {
+      "file": "Frame 1321315113.png",
+      "title": "Frame 1321315113"
+    },
+    {
+      "file": "Frame 1321315117.png",
+      "title": "Frame 1321315117"
+    },
+    {
+      "file": "Frame 1321315147.png",
+      "title": "Frame 1321315147"
+    },
+    {
+      "file": "Frame 1321315150.png",
+      "title": "Frame 1321315150"
+    },
+    {
+      "file": "Frame 1321315154.png",
+      "title": "Frame 1321315154"
+    },
+    {
+      "file": "Frame 1321315165.png",
+      "title": "Frame 1321315165"
+    },
+    {
+      "file": "graph.png",
+      "title": "graph"
+    },
+    {
+      "file": "inf1.png",
+      "title": "inf1"
+    },
+    {
+      "file": "infimg.png",
+      "title": "infimg"
+    },
+    {
+      "file": "info (2).png",
+      "title": "info (2)"
+    },
+    {
+      "file": "info.png",
+      "title": "info"
+    },
+    {
+      "file": "Info1.png",
+      "title": "Info1"
+    },
+    {
+      "file": "info123.png",
+      "title": "info123"
+    },
+    {
+      "file": "info222.png",
+      "title": "info222"
+    },
+    {
+      "file": "info2222222222222222.png",
+      "title": "info2222222222222222"
+    },
+    {
+      "file": "infographic b 1.png",
+      "title": "infographic b 1"
+    },
+    {
+      "file": "infographic b 2.png",
+      "title": "infographic b 2"
+    },
+    {
+      "file": "infographic b 3.png",
+      "title": "infographic b 3"
+    },
+    {
+      "file": "infographic.png",
+      "title": "infographic"
+    },
+    {
+      "file": "infographic01.png",
+      "title": "infographic01"
+    },
+    {
+      "file": "infographic11.png",
+      "title": "infographic11"
+    },
+    {
+      "file": "infographic2.png",
+      "title": "infographic2"
+    },
+    {
+      "file": "infographic3.png",
+      "title": "infographic3"
+    },
+    {
+      "file": "infooo22222.png",
+      "title": "infooo22222"
+    }
+  ],
+  "iotsmarthome": [
+    {
+      "file": "App/Access logs.png",
+      "title": "Access logs"
+    },
+    {
+      "file": "App/Accounts.png",
+      "title": "Accounts"
+    },
+    {
+      "file": "App/Activity.png",
+      "title": "Activity"
+    },
+    {
+      "file": "App/Add device.png",
+      "title": "Add device"
+    },
+    {
+      "file": "App/add room.png",
+      "title": "add room"
+    },
+    {
+      "file": "App/Air quality.png",
+      "title": "Air quality"
+    },
+    {
+      "file": "App/Alarm.png",
+      "title": "Alarm"
+    },
+    {
+      "file": "App/Alerts.png",
+      "title": "Alerts"
+    },
+    {
+      "file": "App/Automatio page.png",
+      "title": "Automatio page"
+    },
+    {
+      "file": "App/Automations.png",
+      "title": "Automations"
+    },
+    {
+      "file": "App/Backup.png",
+      "title": "Backup"
+    },
+    {
+      "file": "App/Backyard camera.png",
+      "title": "Backyard camera"
+    },
+    {
+      "file": "App/Conectivity.png",
+      "title": "Conectivity"
+    },
+    {
+      "file": "App/Dashboard.png",
+      "title": "Dashboard"
+    },
+    {
+      "file": "App/Device settings.png",
+      "title": "Device settings"
+    },
+    {
+      "file": "App/Devices.png",
+      "title": "Devices"
+    },
+    {
+      "file": "App/Energy consumption.png",
+      "title": "Energy consumption"
+    },
+    {
+      "file": "App/Front door.png",
+      "title": "Front door"
+    },
+    {
+      "file": "App/Group device.png",
+      "title": "Group device"
+    },
+    {
+      "file": "App/Guest account.png",
+      "title": "Guest account"
+    },
+    {
+      "file": "App/History.png",
+      "title": "History"
+    },
+    {
+      "file": "App/Home page.png",
+      "title": "Home page"
+    },
+    {
+      "file": "App/Home settings.png",
+      "title": "Home settings"
+    },
+    {
+      "file": "App/Lights color.png",
+      "title": "Lights color"
+    },
+    {
+      "file": "App/lights.png",
+      "title": "lights"
+    },
+    {
+      "file": "App/Living room.png",
+      "title": "Living room"
+    },
+    {
+      "file": "App/Member invite.png",
+      "title": "Member invite"
+    },
+    {
+      "file": "App/Morning Routine.png",
+      "title": "Morning Routine"
+    },
+    {
+      "file": "App/New automation.png",
+      "title": "New automation"
+    },
+    {
+      "file": "App/Notifications  settings.png",
+      "title": "Notifications  settings"
+    },
+    {
+      "file": "App/Notifications.png",
+      "title": "Notifications"
+    },
+    {
+      "file": "App/room1.png",
+      "title": "room1"
+    },
+    {
+      "file": "App/Rooms.png",
+      "title": "Rooms"
+    },
+    {
+      "file": "App/Security page.png",
+      "title": "Security page"
+    },
+    {
+      "file": "App/Security.png",
+      "title": "Security"
+    },
+    {
+      "file": "App/Seens.png",
+      "title": "Seens"
+    },
+    {
+      "file": "App/Seenses and animations.png",
+      "title": "Seenses and animations"
+    },
+    {
+      "file": "App/Settings.png",
+      "title": "Settings"
+    },
+    {
+      "file": "App/Systemm status.png",
+      "title": "Systemm status"
+    },
+    {
+      "file": "App/Temperature.png",
+      "title": "Temperature"
+    },
+    {
+      "file": "App/Users.png",
+      "title": "Users"
+    },
+    {
+      "file": "App/Visitor camera and door bell.png",
+      "title": "Visitor camera and door bell"
+    },
+    {
+      "file": "App/Voice assistant.png",
+      "title": "Voice assistant"
+    },
+    {
+      "file": "App/Wether update.png",
+      "title": "Wether update"
+    },
+    {
+      "file": "App/Zones.png",
+      "title": "Zones"
+    },
+    {
+      "file": "Dashboard/Automation.png",
+      "title": "Automation"
+    },
+    {
+      "file": "Dashboard/Devices.png",
+      "title": "Devices"
+    },
+    {
+      "file": "Dashboard/Diagnosis.png",
+      "title": "Diagnosis"
+    },
+    {
+      "file": "Dashboard/Energy.png",
+      "title": "Energy"
+    },
+    {
+      "file": "Dashboard/Overview.png",
+      "title": "Overview"
+    },
+    {
+      "file": "Dashboard/Rooms.png",
+      "title": "Rooms"
+    },
+    {
+      "file": "Dashboard/Settings.png",
+      "title": "Settings"
+    },
+    {
+      "file": "Dashboard/System health.png",
+      "title": "System health"
+    },
+    {
+      "file": "Dashboard/Users.png",
+      "title": "Users"
+    }
+  ],
+  "portfoliatemplate": [
+    {
+      "file": "portfoliotemplate.png",
+      "title": "portfoliotemplate"
+    }
+  ],
+  "ridged-lp": [
+    {
+      "file": "ridgedlandingpage.png",
+      "title": "ridgedlandingpage"
+    }
+  ],
+  "saas-flow": [
+    {
+      "file": "Calendar View.png",
+      "title": "Calendar View"
+    },
+    {
+      "file": "Create New Task.png",
+      "title": "Create New Task"
+    },
+    {
+      "file": "Notification Center.png",
+      "title": "Notification Center"
+    },
+    {
+      "file": "Task Completed Success.png",
+      "title": "Task Completed Success"
+    },
+    {
+      "file": "Task Details (Flow Update).png",
+      "title": "Task Details (Flow Update)"
+    },
+    {
+      "file": "Workspace Board (Updated).png",
+      "title": "Workspace Board (Updated)"
+    }
+  ],
+  "skinmuselsndingpage": [
+    {
+      "file": "Landing Page.png",
+      "title": "Landing Page"
+    },
+    {
+      "file": "makeuplandingpage.png",
+      "title": "makeuplandingpage"
+    },
+    {
+      "file": "Product Catalog.png",
+      "title": "Product Catalog"
+    },
+    {
+      "file": "Product Page.png",
+      "title": "Product Page"
+    },
+    {
+      "file": "Shopping Bag.png",
+      "title": "Shopping Bag"
+    }
+  ],
+  "wireframing": [
+    {
+      "file": "mobile.png",
+      "title": "mobile"
+    },
+    {
+      "file": "Shoppera Brand Style Guide.png",
+      "title": "Shoppera Brand Style Guide"
+    },
+    {
+      "file": "Shoppera Desktop Wireframe.png",
+      "title": "Shoppera Desktop Wireframe"
+    }
+  ]
+}
