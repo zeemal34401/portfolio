@@ -12,18 +12,18 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 pb-20 pt-16 sm:pb-28 sm:pt-24 lg:px-10">
           <div className="max-w-4xl">
-            <p className="animate-fade-up flex items-center gap-3 font-mono-label text-[11px] uppercase tracking-[0.24em] text-muted">
+            <p className="animate-fade-up flex items-center gap-3 font-mono-label text-[11px] uppercase tracking-[0.24em] text-muted-soft">
               <LiveDot />
               {site.name} · {site.title}
             </p>
-            <h1 className="animate-fade-up delay-1 font-display mt-6 text-[clamp(2.5rem,7vw,5rem)] leading-[0.98] tracking-tight">
-              <span className="text-gradient">UI/UX design</span>
-              <span className="mt-2 block text-muted">that wins clients & ships products.</span>
+            <h1 className="animate-fade-up delay-1 font-display mt-6 text-[clamp(2.5rem,7vw,5rem)] leading-[1.02] tracking-tight text-foreground">
+              <span className="text-primary">UI/UX</span> design
+              <span className="mt-2 block text-foreground-subtle">that wins clients & ships products.</span>
             </h1>
-            <p className="animate-fade-up delay-2 prose-narrow mt-8 text-lg leading-relaxed text-muted sm:text-xl">
+            <p className="animate-fade-up delay-2 prose-narrow mt-8 text-lg text-muted sm:text-xl">
               {site.tagline}
             </p>
-            <p className="animate-fade-up delay-2 mt-4 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-4 py-2 font-mono-label text-[11px] uppercase tracking-[0.12em] text-accent-bright">
+            <p className="animate-fade-up delay-2 badge mt-4 inline-flex items-center gap-2 px-4 py-2 font-mono-label text-[11px] uppercase tracking-[0.12em]">
               <LiveDot />
               {site.availability}
             </p>
@@ -35,9 +35,9 @@ export default function Home() {
 
           <div className="animate-fade-up delay-4 mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {site.highlights.map((item) => (
-              <div key={item.label} className="glass-card-static rounded-2xl p-6">
-                <p className="font-display text-xl tracking-tight text-gradient-accent">{item.label}</p>
-                <p className="mt-2 font-mono-label text-[10px] uppercase tracking-[0.18em] text-muted">{item.detail}</p>
+              <div key={item.label} className="glass-card-static rounded-[18px] p-6">
+                <p className="font-display text-xl tracking-tight text-foreground">{item.label}</p>
+                <p className="mt-2 font-mono-label text-[10px] uppercase tracking-[0.18em] text-muted-soft">{item.detail}</p>
               </div>
             ))}
           </div>
@@ -50,8 +50,8 @@ export default function Home() {
         <Reveal>
           <div>
             <SectionLabel>Featured work</SectionLabel>
-            <h2 className="font-display mt-3 text-4xl tracking-tight sm:text-5xl">
-              Real products. <span className="text-gradient-accent">Real depth.</span>
+            <h2 className="font-display mt-3 text-4xl tracking-tight text-foreground sm:text-5xl">
+              Real products. Real depth.
             </h2>
             <p className="mt-4 max-w-xl text-muted">
               A selection of flagship case studies — SaaS, mobile, IoT, streaming, and marketplace design.
@@ -76,7 +76,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <Reveal>
             <SectionLabel>Why hire me</SectionLabel>
-            <h2 className="font-display mt-3 max-w-2xl text-3xl tracking-tight sm:text-4xl">
+            <h2 className="font-display mt-3 max-w-2xl text-3xl tracking-tight text-foreground sm:text-4xl">
               One designer. Full product surfaces. Remote-ready.
             </h2>
           </Reveal>
@@ -96,9 +96,9 @@ export default function Home() {
               },
             ].map((item) => (
               <StaggerItem key={item.title}>
-                <div className="glass-card card-shine h-full rounded-2xl p-8">
-                  <div className="mb-4 h-1 w-10 rounded-full bg-gradient-to-r from-primary to-accent" />
-                  <h3 className="font-display text-xl">{item.title}</h3>
+                <div className="glass-card card-shine h-full rounded-[18px] p-8">
+                  <div className="card-accent-bar mb-4 h-1 w-10 rounded-full" />
+                  <h3 className="font-display text-xl text-foreground">{item.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted">{item.body}</p>
                 </div>
               </StaggerItem>
@@ -109,11 +109,11 @@ export default function Home() {
 
       <section className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
         <Reveal>
-          <div className="glass-card card-shine rounded-3xl p-10 sm:p-14 lg:flex lg:items-center lg:justify-between">
+          <div className="glass-card card-shine rounded-[18px] p-10 sm:p-14 lg:flex lg:items-center lg:justify-between">
             <div>
               <SectionLabel>Let&apos;s work together</SectionLabel>
-              <p className="font-display mt-4 text-3xl tracking-tight sm:text-4xl">
-                Building a product or need a <span className="text-gradient-accent">design partner?</span>
+              <p className="font-display mt-4 text-3xl tracking-tight text-foreground sm:text-4xl">
+                Building a product or need a design partner?
               </p>
               <p className="mt-4 max-w-lg text-muted">
                 I work with founders, agencies, and product teams worldwide — fixed-scope projects or ongoing design support.

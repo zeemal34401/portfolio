@@ -28,8 +28,8 @@ export default function WorkPage() {
     <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
       <Reveal>
         <SectionLabel>Portfolio</SectionLabel>
-        <h1 className="font-display mt-4 text-5xl tracking-tight sm:text-6xl lg:text-7xl">
-          <span className="text-gradient">All work</span>
+        <h1 className="font-display mt-4 text-5xl tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+          All work
         </h1>
         <p className="prose-narrow mt-6 text-lg text-muted">
           Complete UI/UX work across SaaS, mobile, web, IoT, e-commerce, and marketing — each with case study context,
@@ -39,7 +39,7 @@ export default function WorkPage() {
           {groupOrder.map((g) => (
             <span
               key={g}
-              className="rounded-full border border-primary/20 bg-primary/10 px-4 py-2 font-mono-label text-[10px] uppercase tracking-wider text-accent-bright"
+              className="badge px-4 py-2 font-mono-label text-[10px] uppercase tracking-wider"
             >
               {groupLabels[g]}
             </span>
@@ -87,31 +87,31 @@ export default function WorkPage() {
                             </LazyInView>
                           )}
                           {project.featured && (
-                            <span className="absolute left-5 top-5 rounded-full border border-primary/40 bg-primary/20 px-3 py-1 font-mono-label text-[10px] uppercase tracking-wider text-accent-bright backdrop-blur-sm">
+                            <span className="absolute left-5 top-5 rounded-full border border-success/25 bg-success/10 px-3 py-1 font-mono-label text-[10px] uppercase tracking-wider text-success backdrop-blur-sm">
                               Featured
                             </span>
                           )}
                         </div>
                         <div className="flex flex-col justify-center p-8 lg:p-12">
-                          <span className="font-mono-label text-[10px] uppercase tracking-[0.16em] text-primary">
+                          <span className="font-mono-label text-[10px] uppercase tracking-[0.16em] text-muted-soft">
                             {project.category}
                           </span>
-                          <h3 className="font-display mt-3 text-3xl tracking-tight transition-colors group-hover:text-primary lg:text-4xl">
+                          <h3 className="font-display mt-3 text-3xl tracking-tight text-foreground transition-colors group-hover:text-foreground-subtle lg:text-4xl">
                             {project.name}
                           </h3>
                           <p className="mt-3 max-w-lg text-muted">{project.tagline}</p>
-                          <p className="mt-4 text-sm text-accent-bright/80">{project.proves}</p>
+                          <p className="mt-4 text-sm text-muted">{project.proves}</p>
                           <div className="mt-6 flex flex-wrap gap-2">
                             {project.metrics.slice(0, 3).map((m) => (
                               <span
                                 key={m.label}
-                                className="rounded-full border border-primary/20 bg-primary/10 px-3 py-1 font-mono-label text-[10px] uppercase tracking-wider text-muted"
+                                className="badge px-3 py-1 font-mono-label text-[10px] uppercase tracking-wider"
                               >
                                 {m.label}
                               </span>
                             ))}
                           </div>
-                          <p className="mt-8 flex items-center gap-2 text-sm text-primary">
+                          <p className="mt-8 flex items-center gap-2 text-sm text-muted transition-colors group-hover:text-foreground">
                             View case study
                             <span className="transition-transform group-hover:translate-x-2">→</span>
                           </p>

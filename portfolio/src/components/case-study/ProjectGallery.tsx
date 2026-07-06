@@ -25,7 +25,7 @@ export function ProjectGallery({ images }: { images: GalleryImage[] }) {
         {groups.map((group) => (
           <Reveal key={group}>
             {groups.length > 1 && (
-              <h3 className="mb-6 font-mono-label text-[11px] uppercase tracking-[0.18em] text-accent-bright">
+              <h3 className="mb-6 font-mono-label text-[11px] uppercase tracking-[0.18em] text-muted-soft">
                 {group}
               </h3>
             )}
@@ -35,7 +35,7 @@ export function ProjectGallery({ images }: { images: GalleryImage[] }) {
                   key={img.src}
                   type="button"
                   onClick={() => setActive(img)}
-                  className="glass-card card-shine group overflow-hidden rounded-2xl text-left transition-transform hover:-translate-y-1"
+                  className="glass-card card-shine group overflow-hidden rounded-[18px] text-left transition-transform hover:-translate-y-1"
                 >
                   <div className="relative aspect-[4/3] overflow-hidden bg-surface">
                     <LazyInView className="absolute inset-0">
@@ -50,7 +50,7 @@ export function ProjectGallery({ images }: { images: GalleryImage[] }) {
                       />
                     </LazyInView>
                   </div>
-                  <p className="border-t border-border px-4 py-3 text-sm text-muted transition-colors group-hover:text-primary">
+                  <p className="border-t border-border px-4 py-3 text-sm text-muted transition-colors group-hover:text-foreground">
                     {img.title}
                   </p>
                 </button>
@@ -73,7 +73,7 @@ export function ProjectGallery({ images }: { images: GalleryImage[] }) {
               initial={{ scale: 0.92, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.92, opacity: 0 }}
-              className="screen-shadow max-h-[90vh] max-w-5xl overflow-auto rounded-2xl border border-border bg-card"
+              className="screen-shadow max-h-[90vh] max-w-5xl overflow-auto rounded-[18px] border border-border bg-card"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="relative min-h-[200px] w-full">
@@ -91,7 +91,7 @@ export function ProjectGallery({ images }: { images: GalleryImage[] }) {
                 <button
                   type="button"
                   onClick={() => setActive(null)}
-                  className="rounded-full border border-border px-4 py-2 text-sm text-muted hover:text-foreground"
+                  className="rounded-[14px] border border-border px-4 py-2 text-sm text-muted transition-colors hover:border-[rgba(255,255,255,0.14)] hover:text-foreground"
                 >
                   Close
                 </button>

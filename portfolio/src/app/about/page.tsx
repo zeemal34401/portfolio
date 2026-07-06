@@ -11,13 +11,13 @@ export default function AboutPage() {
     <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
       <Reveal>
         <SectionLabel>About</SectionLabel>
-        <h1 className="font-display mt-4 max-w-4xl text-5xl tracking-tight sm:text-6xl">
-          Remote UI/UX designer for <span className="text-gradient-accent">products that ship.</span>
+        <h1 className="font-display mt-4 max-w-4xl text-5xl tracking-tight text-foreground sm:text-6xl">
+          Remote UI/UX designer for products that ship.
         </h1>
       </Reveal>
 
       <Reveal className="mt-12" delay={0.1}>
-        <div className="glass-card-static rounded-3xl p-8 sm:p-10">
+        <div className="glass-card-static rounded-[18px] p-8 sm:p-10">
           <div className="prose-narrow space-y-6 text-lg leading-relaxed text-muted">
             <p className="text-foreground">
               I&apos;m {site.name} — a UI/UX product designer based remotely and available worldwide. I partner
@@ -54,9 +54,9 @@ export default function AboutPage() {
           },
         ].map((item) => (
           <StaggerItem key={item.title}>
-            <div className="glass-card card-shine h-full rounded-3xl p-8">
-              <div className="mb-4 h-1 w-10 rounded-full bg-gradient-to-r from-primary to-accent" />
-              <p className="font-display text-2xl tracking-tight">{item.title}</p>
+            <div className="glass-card card-shine h-full rounded-[18px] p-8">
+              <div className="card-accent-bar mb-4 h-1 w-10 rounded-full" />
+              <p className="font-display text-2xl tracking-tight text-foreground">{item.title}</p>
               <p className="mt-4 text-sm leading-relaxed text-muted">{item.body}</p>
             </div>
           </StaggerItem>
@@ -64,9 +64,9 @@ export default function AboutPage() {
       </Stagger>
 
       <Reveal className="mt-16">
-        <div className="glass-card-static rounded-3xl p-8 text-center sm:p-12">
+        <div className="glass-card-static rounded-[18px] p-8 text-center sm:p-12">
           <SectionLabel>Ready to start?</SectionLabel>
-          <p className="font-display mx-auto mt-4 max-w-xl text-3xl tracking-tight">
+          <p className="font-display mx-auto mt-4 max-w-xl text-3xl tracking-tight text-foreground">
             Tell me about your product — I&apos;ll reply within 24 hours.
           </p>
           <div className="mt-8 flex justify-center">
