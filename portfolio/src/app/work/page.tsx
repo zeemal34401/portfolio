@@ -93,14 +93,14 @@ export default function WorkPage() {
                           )}
                         </div>
                         <div className="flex flex-col justify-center p-8 lg:p-12">
-                          <span className="font-mono-label text-[10px] uppercase tracking-[0.16em] text-muted-soft">
+                          <span className="font-mono-label text-[10px] uppercase tracking-[0.16em] text-primary">
                             {project.category}
                           </span>
-                          <h3 className="font-display mt-3 text-3xl tracking-tight text-foreground transition-colors group-hover:text-foreground-subtle lg:text-4xl">
+                          <h3 className="font-display mt-3 text-3xl tracking-tight text-[#1a1714] transition-colors group-hover:text-primary lg:text-4xl">
                             {project.name}
                           </h3>
-                          <p className="mt-3 max-w-lg text-muted">{project.tagline}</p>
-                          <p className="mt-4 text-sm text-muted">{project.proves}</p>
+                          <p className="mt-3 max-w-lg text-[#5c534a]">{project.tagline}</p>
+                          <p className="mt-4 text-sm text-[#7a7168]">{project.proves}</p>
                           <div className="mt-6 flex flex-wrap gap-2">
                             {project.metrics.slice(0, 3).map((m) => (
                               <span
@@ -111,7 +111,7 @@ export default function WorkPage() {
                               </span>
                             ))}
                           </div>
-                          <p className="mt-8 flex items-center gap-2 text-sm text-muted transition-colors group-hover:text-foreground">
+                          <p className="mt-8 flex items-center gap-2 text-sm text-primary">
                             View case study
                             <span className="transition-transform group-hover:translate-x-2">→</span>
                           </p>

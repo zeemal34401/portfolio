@@ -3,6 +3,7 @@ import { DM_Sans, Instrument_Serif, JetBrains_Mono } from "next/font/google";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { AmbientBackground } from "@/components/motion/AmbientBackground";
+import { MotionMain, MotionProviders } from "@/components/motion/MotionProviders";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -45,10 +46,12 @@ export default function RootLayout({
       className={`${dmSans.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="grain flex min-h-full flex-col">
-        <AmbientBackground />
-        <SiteHeader />
-        <main className="flex-1">{children}</main>
-        <SiteFooter />
+        <MotionProviders>
+          <AmbientBackground />
+          <SiteHeader />
+          <MotionMain>{children}</MotionMain>
+          <SiteFooter />
+        </MotionProviders>
       </body>
     </html>
   );

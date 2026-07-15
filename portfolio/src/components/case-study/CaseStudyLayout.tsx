@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { ProjectGallery, ProjectVideos } from "@/components/case-study/ProjectGallery";
+import { MetricCards } from "@/components/case-study/MetricCards";
 import { SectionLabel } from "@/components/ui/SiteUi";
 import type { Project } from "@/lib/projects";
 
@@ -12,7 +13,7 @@ export function CaseStudyLayout({ project }: { project: Project }) {
           className="pointer-events-none absolute inset-0 opacity-60"
           style={{
             background:
-              "radial-gradient(ellipse 70% 60% at 80% 0%, rgba(91, 127, 255, 0.04), transparent)",
+              "radial-gradient(ellipse 70% 60% at 80% 0%, rgba(209, 125, 80, 0.1), transparent)",
           }}
         />
         <div className="relative mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-24">
@@ -50,17 +51,7 @@ export function CaseStudyLayout({ project }: { project: Project }) {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-10">
-        <Stagger className="grid gap-4 sm:grid-cols-3">
-          {project.metrics.map((m) => (
-            <StaggerItem key={m.label}>
-              <div className="glass-card card-shine rounded-[18px] p-6">
-                <p className="font-display text-3xl tracking-tight text-foreground">{m.value}</p>
-                <p className="mt-2 font-medium">{m.label}</p>
-                {m.detail && <p className="mt-1 text-sm text-muted">{m.detail}</p>}
-              </div>
-            </StaggerItem>
-          ))}
-        </Stagger>
+        <MetricCards metrics={project.metrics} />
       </section>
 
       <section className="border-y border-border bg-surface backdrop-blur-xl">
@@ -93,11 +84,13 @@ export function CaseStudyLayout({ project }: { project: Project }) {
         <Reveal>
           <SectionLabel>Design gallery</SectionLabel>
           <p className="mt-3 max-w-2xl text-sm text-muted">
-            Screens and assets from this project — click any frame to view full size.
+            {project.slug === "karto"
+              ? "Choose an app surface to explore its screens — click any frame to view full size."
+              : "Screens and assets from this project — click any frame to view full size."}
           </p>
         </Reveal>
         <div className="mt-10">
-          <ProjectGallery images={project.gallery} />
+          <ProjectGallery images={project.gallery} groupedCards={project.slug === "karto"} />
         </div>
       </section>
 

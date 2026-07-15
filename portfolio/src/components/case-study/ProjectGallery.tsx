@@ -8,8 +8,82 @@ import { Reveal } from "@/components/motion/Reveal";
 import { SectionLabel } from "@/components/ui/SiteUi";
 import type { GalleryImage, ProjectVideo } from "@/lib/projects";
 
-export function ProjectGallery({ images }: { images: GalleryImage[] }) {
+const GROUP_LABELS: Record<string, string> = {
+  customer: "Customer App",
+  rider: "Rider App",
+  store: "Store App",
+  web: "Web",
+  app: "Mobile App",
+  dashboard: "Web Dashboard",
+};
+
+const GROUP_ORDER = ["customer", "rider", "store", "web", "app", "dashboard"];
+
+function groupLabel(key: string) {
+  const lower = key.toLowerCase();
+  return GROUP_LABELS[lower] ?? key;
+}
+
+function sortGroups(groups: string[]) {
+  return [...groups].sort((a, b) => {
+    const ai = GROUP_ORDER.indexOf(a.toLowerCase());
+    const bi = GROUP_ORDER.indexOf(b.toLowerCase());
+    if (ai === -1 && bi === -1) return a.localeCompare(b);
+    if (ai === -1) return 1;
+    if (bi === -1) return -1;
+    return ai - bi;
+  });
+}
+
+function ImageGrid({
+  images,
+  onSelect,
+}: {
+  images: GalleryImage[];
+  onSelect: (img: GalleryImage) => void;
+}) {
+  return (
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {images.map((img, imageIndex) => (
+        <button
+          key={img.src}
+          type="button"
+          onClick={() => onSelect(img)}
+          className="glass-card card-shine group overflow-hidden rounded-[18px] text-left transition-transform hover:-translate-y-1"
+        >
+          <div className="relative aspect-[4/3] overflow-hidden bg-surface">
+            <LazyInView className="absolute inset-0">
+              <Image
+                src={img.src}
+                alt={img.title}
+                fill
+                className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                loading={imageIndex < 3 ? undefined : "lazy"}
+                decoding="async"
+              />
+            </LazyInView>
+          </div>
+          <p className="border-t border-border px-4 py-3 text-sm text-muted transition-colors group-hover:text-foreground">
+            {img.title}
+          </p>
+        </button>
+      ))}
+    </div>
+  );
+}
+
+export function ProjectGallery({
+  images,
+  groupedCards = false,
+}: {
+  images: GalleryImage[];
+  /** When true and multiple groups exist, show selectable app cards first */
+  groupedCards?: boolean;
+}) {
   const [active, setActive] = useState<GalleryImage | null>(null);
+  const [selectedGroup, setSelectedGroup] = useState<string | null>(null);
+
   const grouped = images.reduce<Record<string, GalleryImage[]>>((acc, img) => {
     const key = img.group ?? "Screens";
     if (!acc[key]) acc[key] = [];
@@ -17,48 +91,87 @@ export function ProjectGallery({ images }: { images: GalleryImage[] }) {
     return acc;
   }, {});
 
-  const groups = Object.keys(grouped).sort();
+  const groups = sortGroups(Object.keys(grouped));
+  const useCards = groupedCards && groups.length > 1;
 
   return (
     <>
-      <div className="space-y-14">
-        {groups.map((group) => (
-          <Reveal key={group}>
-            {groups.length > 1 && (
-              <h3 className="mb-6 font-mono-label text-[11px] uppercase tracking-[0.18em] text-muted-soft">
-                {group}
-              </h3>
-            )}
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {grouped[group].map((img, imageIndex) => (
+      {useCards && !selectedGroup && (
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {groups.map((group) => {
+            const cover = grouped[group][0];
+            const count = grouped[group].length;
+            const label = groupLabel(group);
+
+            return (
+              <Reveal key={group} className="h-full">
                 <button
-                  key={img.src}
                   type="button"
-                  onClick={() => setActive(img)}
-                  className="glass-card card-shine group overflow-hidden rounded-[18px] text-left transition-transform hover:-translate-y-1"
+                  onClick={() => setSelectedGroup(group)}
+                  className="glass-card card-shine group flex h-full w-full flex-col overflow-hidden rounded-[18px] text-left transition-transform hover:-translate-y-1"
                 >
-                  <div className="relative aspect-[4/3] overflow-hidden bg-surface">
-                    <LazyInView className="absolute inset-0">
+                  <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-surface">
+                    {cover && (
                       <Image
-                        src={img.src}
-                        alt={img.title}
+                        src={cover.src}
+                        alt={label}
                         fill
                         className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                        sizes="(max-width: 768px) 100vw, 33vw"
-                        loading={imageIndex < 3 ? undefined : "lazy"}
-                        decoding="async"
+                        sizes="(max-width: 768px) 100vw, 25vw"
                       />
-                    </LazyInView>
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                    <p className="absolute bottom-3 left-3 right-3 font-display text-xl leading-tight text-white">
+                      {label}
+                    </p>
                   </div>
-                  <p className="border-t border-border px-4 py-3 text-sm text-muted transition-colors group-hover:text-foreground">
-                    {img.title}
-                  </p>
+                  <div className="mt-auto flex min-h-[52px] items-center justify-between border-t border-border px-4 py-3">
+                    <p className="font-mono-label text-[10px] uppercase tracking-[0.16em] text-primary">
+                      {count} screens
+                    </p>
+                    <span className="text-sm text-muted transition-colors group-hover:text-primary">
+                      View →
+                    </span>
+                  </div>
                 </button>
-              ))}
-            </div>
-          </Reveal>
-        ))}
-      </div>
+              </Reveal>
+            );
+          })}
+        </div>
+      )}
+
+      {useCards && selectedGroup && (
+        <div className="space-y-6">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <button
+              type="button"
+              onClick={() => setSelectedGroup(null)}
+              className="font-mono-label text-[11px] uppercase tracking-[0.16em] text-muted-soft transition-colors hover:text-foreground"
+            >
+              ← All apps
+            </button>
+            <h3 className="font-mono-label text-[11px] uppercase tracking-[0.18em] text-primary">
+              {groupLabel(selectedGroup)}
+            </h3>
+          </div>
+          <ImageGrid images={grouped[selectedGroup]} onSelect={setActive} />
+        </div>
+      )}
+
+      {!useCards && (
+        <div className="space-y-14">
+          {groups.map((group) => (
+            <Reveal key={group}>
+              {groups.length > 1 && (
+                <h3 className="mb-6 font-mono-label text-[11px] uppercase tracking-[0.18em] text-muted-soft">
+                  {groupLabel(group)}
+                </h3>
+              )}
+              <ImageGrid images={grouped[group]} onSelect={setActive} />
+            </Reveal>
+          ))}
+        </div>
+      )}
 
       <AnimatePresence>
         {active && (
@@ -91,7 +204,7 @@ export function ProjectGallery({ images }: { images: GalleryImage[] }) {
                 <button
                   type="button"
                   onClick={() => setActive(null)}
-                  className="rounded-[14px] border border-border px-4 py-2 text-sm text-muted transition-colors hover:border-[rgba(255,255,255,0.14)] hover:text-foreground"
+                  className="rounded-[14px] border border-border px-4 py-2 text-sm text-muted transition-colors hover:border-[rgba(209,125,80,0.35)] hover:text-foreground"
                 >
                   Close
                 </button>

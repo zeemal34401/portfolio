@@ -1080,5 +1080,439 @@
       "file": "Shoppera Desktop Wireframe.png",
       "title": "Shoppera Desktop Wireframe"
     }
+  ],
+  "Karto": [
+    {
+      "file": "customer/Arrived.png",
+      "title": "Arrived"
+    },
+    {
+      "file": "customer/Email.png",
+      "title": "Email"
+    },
+    {
+      "file": "customer/forgot password_-1.png",
+      "title": "forgot password_-1"
+    },
+    {
+      "file": "customer/forgot password_-2.png",
+      "title": "forgot password_-2"
+    },
+    {
+      "file": "customer/forgot password_.png",
+      "title": "forgot password_"
+    },
+    {
+      "file": "customer/Home l Guest User.png",
+      "title": "Home l Guest User"
+    },
+    {
+      "file": "customer/itemdetail.png",
+      "title": "itemdetail"
+    },
+    {
+      "file": "customer/Leaving Store-1.png",
+      "title": "Leaving Store-1"
+    },
+    {
+      "file": "customer/Leaving Store-2.png",
+      "title": "Leaving Store-2"
+    },
+    {
+      "file": "customer/Leaving Store.png",
+      "title": "Leaving Store"
+    },
+    {
+      "file": "customer/login.png",
+      "title": "login"
+    },
+    {
+      "file": "customer/Mobile Number-1.png",
+      "title": "Mobile Number-1"
+    },
+    {
+      "file": "customer/Mobile number-2.png",
+      "title": "Mobile number-2"
+    },
+    {
+      "file": "customer/Mobile Number.png",
+      "title": "Mobile Number"
+    },
+    {
+      "file": "customer/Order Placed.png",
+      "title": "Order Placed"
+    },
+    {
+      "file": "customer/Out for delivery.png",
+      "title": "Out for delivery"
+    },
+    {
+      "file": "customer/Password.png",
+      "title": "Password"
+    },
+    {
+      "file": "customer/Placeorder.png",
+      "title": "Placeorder"
+    },
+    {
+      "file": "customer/Rate Driver.png",
+      "title": "Rate Driver"
+    },
+    {
+      "file": "customer/Registration.png",
+      "title": "Registration"
+    },
+    {
+      "file": "customer/Search stores or products-1.png",
+      "title": "Search stores or products-1"
+    },
+    {
+      "file": "customer/Search stores or products.png",
+      "title": "Search stores or products"
+    },
+    {
+      "file": "customer/Search.png",
+      "title": "Search"
+    },
+    {
+      "file": "customer/Share Location Message.png",
+      "title": "Share Location Message"
+    },
+    {
+      "file": "customer/Share location.png",
+      "title": "Share location"
+    },
+    {
+      "file": "customer/Shopping basket preview.png",
+      "title": "Shopping basket preview"
+    },
+    {
+      "file": "customer/Splash Screen.png",
+      "title": "Splash Screen"
+    },
+    {
+      "file": "customer/Store Accepted.png",
+      "title": "Store Accepted"
+    },
+    {
+      "file": "customer/Store.png",
+      "title": "Store"
+    },
+    {
+      "file": "rider/Chat screen.png",
+      "title": "Chat screen"
+    },
+    {
+      "file": "rider/Delivery details.png",
+      "title": "Delivery details"
+    },
+    {
+      "file": "rider/Delivery details22.png",
+      "title": "Delivery details22"
+    },
+    {
+      "file": "rider/Earnings.png",
+      "title": "Earnings"
+    },
+    {
+      "file": "rider/Earnings1.png",
+      "title": "Earnings1"
+    },
+    {
+      "file": "rider/Earnings2.png",
+      "title": "Earnings2"
+    },
+    {
+      "file": "rider/Earnings3.png",
+      "title": "Earnings3"
+    },
+    {
+      "file": "rider/Email.png",
+      "title": "Email"
+    },
+    {
+      "file": "rider/Home-1.png",
+      "title": "Home-1"
+    },
+    {
+      "file": "rider/Home.png",
+      "title": "Home"
+    },
+    {
+      "file": "rider/Language.png",
+      "title": "Language"
+    },
+    {
+      "file": "rider/Language1.png",
+      "title": "Language1"
+    },
+    {
+      "file": "rider/Location Permission Modal.png",
+      "title": "Location Permission Modal"
+    },
+    {
+      "file": "rider/Note.png",
+      "title": "Note"
+    },
+    {
+      "file": "rider/Note2.png",
+      "title": "Note2"
+    },
+    {
+      "file": "rider/Note3.png",
+      "title": "Note3"
+    },
+    {
+      "file": "rider/Past.png",
+      "title": "Past"
+    },
+    {
+      "file": "rider/Pickup details.png",
+      "title": "Pickup details"
+    },
+    {
+      "file": "rider/Profile.png",
+      "title": "Profile"
+    },
+    {
+      "file": "rider/Profile1.png",
+      "title": "Profile1"
+    },
+    {
+      "file": "rider/Profile2.png",
+      "title": "Profile2"
+    },
+    {
+      "file": "rider/Profile3.png",
+      "title": "Profile3"
+    },
+    {
+      "file": "rider/Profile4.png",
+      "title": "Profile4"
+    },
+    {
+      "file": "rider/Profile5.png",
+      "title": "Profile5"
+    },
+    {
+      "file": "rider/Profile6.png",
+      "title": "Profile6"
+    },
+    {
+      "file": "rider/profileeee.png",
+      "title": "profileeee"
+    },
+    {
+      "file": "rider/Rider assigned.png",
+      "title": "Rider assigned"
+    },
+    {
+      "file": "rider/Rider assigned2.png",
+      "title": "Rider assigned2"
+    },
+    {
+      "file": "rider/Rider Home.png",
+      "title": "Rider Home"
+    },
+    {
+      "file": "rider/Rider Pickup.png",
+      "title": "Rider Pickup"
+    },
+    {
+      "file": "rider/Vehicle Type.png",
+      "title": "Vehicle Type"
+    },
+    {
+      "file": "rider/Withdrawl.png",
+      "title": "Withdrawl"
+    },
+    {
+      "file": "rider/Withdrawl2.png",
+      "title": "Withdrawl2"
+    },
+    {
+      "file": "rider/Work Schedule.png",
+      "title": "Work Schedule"
+    },
+    {
+      "file": "store/Earnings.png",
+      "title": "Earnings"
+    },
+    {
+      "file": "store/Earnings1.png",
+      "title": "Earnings1"
+    },
+    {
+      "file": "store/Earnings2.png",
+      "title": "Earnings2"
+    },
+    {
+      "file": "store/Earnings3.png",
+      "title": "Earnings3"
+    },
+    {
+      "file": "store/Earnings4.png",
+      "title": "Earnings4"
+    },
+    {
+      "file": "store/Earnings5.png",
+      "title": "Earnings5"
+    },
+    {
+      "file": "store/Email.png",
+      "title": "Email"
+    },
+    {
+      "file": "store/Home.png",
+      "title": "Home"
+    },
+    {
+      "file": "store/Home1.png",
+      "title": "Home1"
+    },
+    {
+      "file": "store/Home2.png",
+      "title": "Home2"
+    },
+    {
+      "file": "store/Home3.png",
+      "title": "Home3"
+    },
+    {
+      "file": "store/Home4.png",
+      "title": "Home4"
+    },
+    {
+      "file": "store/Home5.png",
+      "title": "Home5"
+    },
+    {
+      "file": "store/Home6.png",
+      "title": "Home6"
+    },
+    {
+      "file": "store/Home7.png",
+      "title": "Home7"
+    },
+    {
+      "file": "store/Language1.png",
+      "title": "Language1"
+    },
+    {
+      "file": "store/Language2.png",
+      "title": "Language2"
+    },
+    {
+      "file": "store/Login.png",
+      "title": "Login"
+    },
+    {
+      "file": "store/Profile.png",
+      "title": "Profile"
+    },
+    {
+      "file": "store/Rider assigned.png",
+      "title": "Rider assigned"
+    },
+    {
+      "file": "store/Withdrawl.png",
+      "title": "Withdrawl"
+    },
+    {
+      "file": "store/Withdrawl1.png",
+      "title": "Withdrawl1"
+    },
+    {
+      "file": "store/Work Schedule.png",
+      "title": "Work Schedule"
+    },
+    {
+      "file": "web/About us.png",
+      "title": "About us"
+    },
+    {
+      "file": "web/All Stores.png",
+      "title": "All Stores"
+    },
+    {
+      "file": "web/approved.png",
+      "title": "approved"
+    },
+    {
+      "file": "web/become vendor.png",
+      "title": "become vendor"
+    },
+    {
+      "file": "web/becomedriver.png",
+      "title": "becomedriver"
+    },
+    {
+      "file": "web/Contact Us.png",
+      "title": "Contact Us"
+    },
+    {
+      "file": "web/delivery Page.png",
+      "title": "delivery Page"
+    },
+    {
+      "file": "web/emailconfirmation.png",
+      "title": "emailconfirmation"
+    },
+    {
+      "file": "web/Homepage.png",
+      "title": "Homepage"
+    },
+    {
+      "file": "web/info.png",
+      "title": "info"
+    },
+    {
+      "file": "web/Login form.png",
+      "title": "Login form"
+    },
+    {
+      "file": "web/Login form2.png",
+      "title": "Login form2"
+    },
+    {
+      "file": "web/login.png",
+      "title": "login"
+    },
+    {
+      "file": "web/loginn.png",
+      "title": "loginn"
+    },
+    {
+      "file": "web/Pricing v2.png",
+      "title": "Pricing v2"
+    },
+    {
+      "file": "web/register.png",
+      "title": "register"
+    },
+    {
+      "file": "web/Signup form karto.png",
+      "title": "Signup form karto"
+    },
+    {
+      "file": "web/Subcribe.png",
+      "title": "Subcribe"
+    },
+    {
+      "file": "web/Submitform.png",
+      "title": "Submitform"
+    },
+    {
+      "file": "web/Sustainability.png",
+      "title": "Sustainability"
+    },
+    {
+      "file": "web/Vendor page web.png",
+      "title": "Vendor page web"
+    },
+    {
+      "file": "web/welcome.png",
+      "title": "welcome"
+    }
   ]
 }

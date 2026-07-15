@@ -28,6 +28,62 @@ type ProjectDef = {
 
 export const projectDefinitions: ProjectDef[] = [
   {
+    slug: "karto",
+    assetFolder: "Karto",
+    order: 0,
+    featured: true,
+    name: "Karto",
+    tagline: "Multi-sided marketplace for hardware & landscaping supplies — customer, store, rider, and web",
+    category: "Marketplace · Mobile + Web",
+    categoryGroup: "Product",
+    role: "UI/UX Product Designer",
+    timeline: "12 weeks",
+    tools: ["Figma", "Design Systems", "Prototyping", "Multi-platform UI"],
+    problem:
+      "Hardware and landscaping shoppers struggled to find nearby suppliers with clear delivery, while stores and riders needed separate tools to accept orders, fulfill, and get paid — without a unified product experience.",
+    summary:
+      "Designed the full Karto ecosystem end-to-end: a customer mobile app for discovery and ordering, a store app for order acceptance and earnings, a rider app for pickup and delivery ops, and a marketing/web surface for acquisition, vendor onboarding, and trust.",
+    metrics: [
+      { label: "Screens delivered", value: "108+", detail: "across 4 product surfaces" },
+      { label: "Product apps", value: "4", detail: "customer, store, rider, web" },
+      { label: "Core flows", value: "10+", detail: "search, order, dispatch, payouts" },
+    ],
+    highlights: [
+      "Location-based customer discovery & checkout",
+      "Store order acceptance & earnings",
+      "Rider pickup, delivery, and wallet flows",
+    ],
+    process: [
+      {
+        title: "Multi-persona mapping",
+        body: "Mapped jobs-to-be-done for customers (search → order → track), stores (accept → prepare → handoff), and riders (claim → pickup → deliver → withdraw).",
+      },
+      {
+        title: "Shared design language",
+        body: "Built a consistent green-accent system, card patterns, and status states so all four surfaces feel like one product family.",
+      },
+      {
+        title: "Ops-ready flows",
+        body: "Designed real operational states — declined orders, comments, payouts, schedules, and edge cases — not only happy paths.",
+      },
+    ],
+    outcomes: [
+      {
+        title: "Complete marketplace suite",
+        body: "One cohesive UI system spanning consumer, merchant, courier, and web acquisition.",
+      },
+      {
+        title: "Clear delivery UX",
+        body: "Order lifecycle screens cover placement, store acceptance, rider assignment, and arrival with readable status hierarchy.",
+      },
+    ],
+    deliverables: ["108+ UI screens", "4 platform surfaces", "Marketing & onboarding pages"],
+    proves: "Multi-sided marketplace UX across mobile + web",
+    coverFile: "web/Homepage.png",
+    accent: "#76C783",
+    accentMuted: "rgba(118, 199, 131, 0.18)",
+  },
+  {
     slug: "cravely-vendor",
     assetFolder: "cravelyvendorapp",
     order: 1,
@@ -82,7 +138,7 @@ export const projectDefinitions: ProjectDef[] = [
     slug: "iot-smart-home",
     assetFolder: "iotsmarthome",
     order: 2,
-    featured: true,
+    featured: false,
     name: "SmartHome IoT",
     tagline: "Connected home mobile app & admin dashboard for devices, automation, and security",
     category: "IoT · Mobile + Web",
@@ -472,8 +528,8 @@ export const projectDefinitions: ProjectDef[] = [
   {
     slug: "infographics",
     assetFolder: "infographics",
-    order: 14,
-    featured: false,
+    order: 2,
+    featured: true,
     name: "Infographics",
     tagline: "Product marketing visuals & data storytelling",
     category: "Visual Design",

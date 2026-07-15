@@ -1,5 +1,7 @@
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
-import { LiveDot } from "@/components/motion/Effects";
+import { HomeHero } from "@/components/home/HomeHero";
+import { PageLoader } from "@/components/motion/PageLoader";
+import { SectionDivider } from "@/components/motion/SectionDivider";
 import { GhostLink, MarqueeStrip, PrimaryLink, ProjectCard, SectionLabel } from "@/components/ui/SiteUi";
 import { getHomeProjects } from "@/lib/projects";
 import { site } from "@/lib/site";
@@ -8,45 +10,18 @@ export default function Home() {
   const homeProjects = getHomeProjects(3);
 
   return (
-    <>
-      <section className="relative overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6 pb-20 pt-16 sm:pb-28 sm:pt-24 lg:px-10">
-          <div className="max-w-4xl">
-            <p className="animate-fade-up flex items-center gap-3 font-mono-label text-[11px] uppercase tracking-[0.24em] text-muted-soft">
-              <LiveDot />
-              {site.name} · {site.title}
-            </p>
-            <h1 className="animate-fade-up delay-1 font-display mt-6 text-[clamp(2.5rem,7vw,5rem)] leading-[1.02] tracking-tight text-foreground">
-              <span className="text-primary">UI/UX</span> design
-              <span className="mt-2 block text-foreground-subtle">that wins clients & ships products.</span>
-            </h1>
-            <p className="animate-fade-up delay-2 prose-narrow mt-8 text-lg text-muted sm:text-xl">
-              {site.tagline}
-            </p>
-            <p className="animate-fade-up delay-2 badge mt-4 inline-flex items-center gap-2 px-4 py-2 font-mono-label text-[11px] uppercase tracking-[0.12em]">
-              <LiveDot />
-              {site.availability}
-            </p>
-            <div className="animate-fade-up delay-3 mt-10 flex flex-wrap gap-4">
-              <PrimaryLink href="/work">View all projects</PrimaryLink>
-              <GhostLink href="/contact">Hire me</GhostLink>
-            </div>
-          </div>
+    <PageLoader>
+      <HomeHero />
 
-          <div className="animate-fade-up delay-4 mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {site.highlights.map((item) => (
-              <div key={item.label} className="glass-card-static rounded-[18px] p-6">
-                <p className="font-display text-xl tracking-tight text-foreground">{item.label}</p>
-                <p className="mt-2 font-mono-label text-[10px] uppercase tracking-[0.18em] text-muted-soft">{item.detail}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      <SectionDivider className="my-2" />
       <MarqueeStrip items={site.expertise} />
+      <SectionDivider className="my-2" />
 
-      <section className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
+      <section id="featured" className="relative mx-auto max-w-7xl px-6 py-24 lg:px-10">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -left-10 top-24 h-40 w-40 rounded-full bg-primary/10 blur-3xl"
+        />
         <Reveal>
           <div>
             <SectionLabel>Featured work</SectionLabel>
@@ -61,7 +36,7 @@ export default function Home() {
 
         <Stagger className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {homeProjects.map((project, i) => (
-            <StaggerItem key={project.slug}>
+            <StaggerItem key={project.slug} className="h-full">
               <ProjectCard project={project} index={i} />
             </StaggerItem>
           ))}
@@ -72,7 +47,13 @@ export default function Home() {
         </Reveal>
       </section>
 
-      <section className="border-t border-border bg-surface py-24 backdrop-blur-xl">
+      <SectionDivider />
+
+      <section className="relative border-t border-border bg-surface py-24 backdrop-blur-xl">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute right-0 top-10 h-52 w-52 rounded-full bg-[#C49B6E]/20 blur-3xl"
+        />
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <Reveal>
             <SectionLabel>Why hire me</SectionLabel>
@@ -107,7 +88,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
+      <SectionDivider className="my-2" />
+
+      <section className="relative mx-auto max-w-7xl px-6 py-24 lg:px-10">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute bottom-8 left-1/3 h-44 w-44 rounded-full bg-primary/10 blur-3xl"
+        />
         <Reveal>
           <div className="glass-card card-shine rounded-[18px] p-10 sm:p-14 lg:flex lg:items-center lg:justify-between">
             <div>
@@ -126,6 +113,6 @@ export default function Home() {
           </div>
         </Reveal>
       </section>
-    </>
+    </PageLoader>
   );
 }
