@@ -86,7 +86,7 @@ export function CaseStudyLayout({ project }: { project: Project }) {
           <p className="mt-3 max-w-2xl text-sm text-muted">
             {project.slug === "karto"
               ? "Choose an app surface to explore its screens — click any frame to view full size."
-              : project.slug === "handy-hub"
+              : project.slug === "handy-hub" || project.slug === "trim-club"
                 ? "Choose a flow group to explore its screens — click any frame to view full size."
                 : "Screens and assets from this project — click any frame to view full size."}
           </p>
@@ -94,7 +94,11 @@ export function CaseStudyLayout({ project }: { project: Project }) {
         <div className="mt-10">
           <ProjectGallery
             images={project.gallery}
-            groupedCards={project.slug === "karto" || project.slug === "handy-hub"}
+            groupedCards={
+              project.slug === "karto" ||
+              project.slug === "handy-hub" ||
+              project.slug === "trim-club"
+            }
           />
         </div>
       </section>

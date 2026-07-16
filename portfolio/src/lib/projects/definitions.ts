@@ -140,9 +140,65 @@ export const projectDefinitions: ProjectDef[] = [
     accentMuted: "rgba(91, 75, 219, 0.16)",
   },
   {
+    slug: "trim-club",
+    assetFolder: "Trim Club",
+    order: 2,
+    featured: false,
+    name: "Trim Club",
+    tagline: "Salon & grooming booking app — discover nearby barbers, book, and manage appointments",
+    category: "Mobile · Beauty & Grooming",
+    categoryGroup: "Product",
+    role: "UI/UX Product Designer",
+    timeline: "8 weeks",
+    tools: ["Figma", "Prototyping", "Mobile Patterns", "User Flows"],
+    problem:
+      "Finding a trusted barber or beauty professional nearby is slow — users juggle reviews, calls, and walk-ins without a clear way to compare, book, and manage appointments in one place.",
+    summary:
+      "Designed Trim Club end-to-end: login & onboarding, location-based home discovery for haircuts, makeup, manicure and massage, appointment booking (including guest flows), cancellations, messaging/inbox, and profile settings.",
+    metrics: [
+      { label: "Screens delivered", value: "108+", detail: "across 5 product flows" },
+      { label: "Core flows", value: "5", detail: "login, home, booking, cancel, profile" },
+      { label: "Service categories", value: "4+", detail: "haircuts, makeup, manicure, massage" },
+    ],
+    highlights: [
+      "Nearby salon discovery with ratings & distance",
+      "Appointment booking & guest flows",
+      "Cancellation, inbox, and profile management",
+    ],
+    process: [
+      {
+        title: "Booking journey mapping",
+        body: "Mapped login → discover → book → confirm → cancel, with guest appointment paths and search across categories.",
+      },
+      {
+        title: "Trust-led discovery",
+        body: "Designed provider cards with ratings, distance, favorites, and category browse so users can choose with confidence.",
+      },
+      {
+        title: "Post-booking care",
+        body: "Built cancellation, reschedule cues, inbox messaging, and profile settings for addresses, favorites, and preferences.",
+      },
+    ],
+    outcomes: [
+      {
+        title: "Complete grooming marketplace",
+        body: "A cohesive mobile product from onboarding through booking and appointment management.",
+      },
+      {
+        title: "Premium service aesthetic",
+        body: "Warm gold accent UI suited to beauty and grooming brands without sacrificing clarity.",
+      },
+    ],
+    deliverables: ["108+ UI screens", "5 flow groups", "Auth, booking & profile systems"],
+    proves: "Beauty marketplace & appointment booking UX",
+    coverFile: "Home page/Home screen.png",
+    accent: "#C9A227",
+    accentMuted: "rgba(201, 162, 39, 0.18)",
+  },
+  {
     slug: "cravely-vendor",
     assetFolder: "cravelyvendorapp",
-    order: 2,
+    order: 3,
     featured: true,
     name: "Cravely Vendor",
     tagline: "Multi-vendor food delivery admin platform for operations at scale",
@@ -193,7 +249,7 @@ export const projectDefinitions: ProjectDef[] = [
   {
     slug: "iot-smart-home",
     assetFolder: "iotsmarthome",
-    order: 2,
+    order: 10,
     featured: false,
     name: "SmartHome IoT",
     tagline: "Connected home mobile app & admin dashboard for devices, automation, and security",

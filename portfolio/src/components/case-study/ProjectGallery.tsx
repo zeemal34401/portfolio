@@ -21,6 +21,10 @@ const GROUP_LABELS: Record<string, string> = {
   cancellation: "4 · Cancellation",
   "rating and search": "5 · Rating & Search",
   "profile setting": "6 · Profile Setting",
+  "login screens": "1 · Login Screens",
+  "home page": "2 · Home Page",
+  appointment: "3 · Appointment",
+  profile: "5 · Profile",
 };
 
 const GROUP_ORDER = [
@@ -33,9 +37,13 @@ const GROUP_ORDER = [
   "splash screen",
   "home detail",
   "appointment(guest)",
+  "login screens",
+  "home page",
+  "appointment",
   "cancellation",
   "rating and search",
   "profile setting",
+  "profile",
 ];
 
 function groupLabel(key: string) {
@@ -122,6 +130,8 @@ export function ProjectGallery({
             const preferred = items.find((img) =>
               /splash screen\.png$/i.test(img.src) ||
               /home screen\.png$/i.test(img.src) ||
+              /welcome screen\.png$/i.test(img.src) ||
+              /login\.png$/i.test(img.src) ||
               /\/1\.png$/i.test(img.src) ||
               /\/01\.png$/i.test(img.src) ||
               /profile\.png$/i.test(img.src),
