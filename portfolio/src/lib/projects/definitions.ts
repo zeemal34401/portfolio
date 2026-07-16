@@ -84,9 +84,65 @@ export const projectDefinitions: ProjectDef[] = [
     accentMuted: "rgba(118, 199, 131, 0.18)",
   },
   {
+    slug: "handy-hub",
+    assetFolder: "HandyHub",
+    order: 1,
+    featured: true,
+    name: "Handy Hub",
+    tagline: "On-demand home services app — discover, book, and manage local professionals",
+    category: "Mobile · Services Marketplace",
+    categoryGroup: "Product",
+    role: "UI/UX Product Designer",
+    timeline: "10 weeks",
+    tools: ["Figma", "Prototyping", "Mobile Patterns", "User Flows"],
+    problem:
+      "Booking home services is fragmented — users struggle to find nearby trusted professionals, compare options, schedule appointments, and manage cancellations without bouncing between apps and calls.",
+    summary:
+      "Designed Handy Hub end-to-end: splash & onboarding, service discovery by category and location, provider detail & booking, guest appointments, ratings & search, cancellations, and full profile settings including wallet, addresses, and business join flows.",
+    metrics: [
+      { label: "Screens delivered", value: "164+", detail: "across 6 product flows" },
+      { label: "Core flows", value: "6", detail: "auth, home, booking, search, cancel, profile" },
+      { label: "Service categories", value: "8+", detail: "cleaning, repair, laundry & more" },
+    ],
+    highlights: [
+      "Location-based discovery & nearby providers",
+      "Appointment booking with date, time & payment",
+      "Guest booking, ratings, inbox & cancellations",
+    ],
+    process: [
+      {
+        title: "Service journey mapping",
+        body: "Mapped the full loop from splash → discover → book → confirm → manage/cancel, including guest paths and edge states like invalid date/time.",
+      },
+      {
+        title: "Trust & clarity UX",
+        body: "Designed provider cards with ratings/distance, confirmed appointment overviews, calendar/maps deep-links, and clear cancellation policy.",
+      },
+      {
+        title: "Account & growth surfaces",
+        body: "Built profile settings for wallet, cards, addresses, favorites, support, and joining as a business — supporting retention and marketplace supply.",
+      },
+    ],
+    outcomes: [
+      {
+        title: "Complete booking product",
+        body: "One cohesive mobile experience covering discovery, scheduling, messaging, and post-booking management.",
+      },
+      {
+        title: "Operational edge cases",
+        body: "Cancellation, reschedule, invalid slots, and guest appointment flows designed alongside happy paths.",
+      },
+    ],
+    deliverables: ["164+ UI screens", "6 flow groups", "Auth, booking & profile systems"],
+    proves: "Services marketplace & booking UX",
+    coverFile: "Home detail/Home screen.png",
+    accent: "#5B4BDB",
+    accentMuted: "rgba(91, 75, 219, 0.16)",
+  },
+  {
     slug: "cravely-vendor",
     assetFolder: "cravelyvendorapp",
-    order: 1,
+    order: 2,
     featured: true,
     name: "Cravely Vendor",
     tagline: "Multi-vendor food delivery admin platform for operations at scale",

@@ -15,9 +15,28 @@ const GROUP_LABELS: Record<string, string> = {
   web: "Web",
   app: "Mobile App",
   dashboard: "Web Dashboard",
+  "splash screen": "1 · Splash Screen",
+  "home detail": "2 · Home Detail",
+  "appointment(guest)": "3 · Appointment",
+  cancellation: "4 · Cancellation",
+  "rating and search": "5 · Rating & Search",
+  "profile setting": "6 · Profile Setting",
 };
 
-const GROUP_ORDER = ["customer", "rider", "store", "web", "app", "dashboard"];
+const GROUP_ORDER = [
+  "customer",
+  "rider",
+  "store",
+  "web",
+  "app",
+  "dashboard",
+  "splash screen",
+  "home detail",
+  "appointment(guest)",
+  "cancellation",
+  "rating and search",
+  "profile setting",
+];
 
 function groupLabel(key: string) {
   const lower = key.toLowerCase();
@@ -99,8 +118,16 @@ export function ProjectGallery({
       {useCards && !selectedGroup && (
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {groups.map((group) => {
-            const cover = grouped[group][0];
-            const count = grouped[group].length;
+            const items = grouped[group];
+            const preferred = items.find((img) =>
+              /splash screen\.png$/i.test(img.src) ||
+              /home screen\.png$/i.test(img.src) ||
+              /\/1\.png$/i.test(img.src) ||
+              /\/01\.png$/i.test(img.src) ||
+              /profile\.png$/i.test(img.src),
+            );
+            const cover = preferred ?? items[0];
+            const count = items.length;
             const label = groupLabel(group);
 
             return (
